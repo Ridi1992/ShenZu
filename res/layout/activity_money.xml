@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bjx="http://schemas.android.com/apk/res/com.sanmi.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/bg_hui">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title" />
+    <View style="@style/View02" />
+
+     <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title2" />
+
+    <com.sanmi.refresh.PullToRefreshListView
+        android:id="@+id/lv_money"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:scrollbars="@null"
+        bjx:mode="both" />
+
+
+
+        <Button
+            android:id="@+id/btn_fabu"
+             style="@style/button02"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#6b60f6"
+            android:text="我要发布"  />
+  
+
+</LinearLayout>

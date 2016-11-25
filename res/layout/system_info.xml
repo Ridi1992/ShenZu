@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/qianhui">
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/baise"
+        android:padding="10dp">
+    <com.sanmi.view.CircularImage
+        android:id="@+id/iv_m_touxiang"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/morentu" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+         <TextView
+        android:id="@+id/tv_m01" 
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="message"
+        android:textSize="@dimen/font_14"
+        android:textColor="@color/font_hui"
+        />
+   
+        <TextView 
+        android:id="@+id/tv_m02" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="right"
+        android:text=""
+        android:textSize="@dimen/font_14"
+        android:textColor="@color/chengse"/>
+    </LinearLayout>
+   
+    </LinearLayout>
+     
+
+</LinearLayout>

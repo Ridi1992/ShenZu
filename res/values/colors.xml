@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <color name="font_ck">#6B60F6</color>
+   <color name="font_nock">#5E5F5F</color>
+   <color name="white">#FFFFFF</color>
+   <color name="title_color01">#6B60F6</color>
+   <color name="title_color02">#D3D3D3</color>
+   <color name="font_lanse">#7C85EF</color>
+   <color name="bg_hui">#F6F6F6</color>
+   <color name="button">#6B60F6</color>
+    <color name="view_dededd">#dededd</color>
+   <color name="font_hui">#6E6E6E</color>
+    <color name="mianfei_color">#6b60f6</color>
+    <color name="nv_color">#f8536e</color>
+    <color name="nan_color">#56abe4</color>
+    <color name="tuhao_color">#d4c636</color>
+    <color name="qianhui_color">#cccccc</color>
+    <color name="lanzise">#7b71f7</color>
+    <color name="qianhongse">#f76274</color>
+    <color name="info_color">#766cf7</color>
+    <color name="baise">#ffffff</color>
+    <color name="heise">#000000</color>
+    <color name="lanse">#3e74e8</color>
+    <color name="lvse">#269735</color>
+    <color name="huise">#666666</color>
+    <color name="qianhui">#EEEDF3</color>
+    <color name="zhonghui">#aaaaaa</color>
+    <color name="shenhui">#282828</color>
+    <color name="shenhui4a">#282828</color>
+    <color name="touming">#00000000</color>
+    <color name="chengse">#f8c16f</color>
+    <color name="red">#f8c16f</color>
+    
+    <color name="pop_true">#EEEDFA</color>
+    <color name="pop_no">#B8B8B8</color>
+   
+
+</resources>

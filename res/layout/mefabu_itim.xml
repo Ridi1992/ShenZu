@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_hui" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"
+        >
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Top"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="出租范围"
+                android:textColor="@color/huise"
+                android:textSize="@dimen/font_14" />
+
+            <TextView
+                android:id="@+id/tv_mefabu_fanwei"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/Top"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text=""
+                android:singleLine="true"
+                android:textColor="@color/huise"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:id="@+id/tv_mefabu_qubie"
+                android:layout_width="35dp"
+                android:layout_height="@dimen/Top"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:layout_marginRight="5dp"
+                android:textColor="@color/font_lanse"
+                android:textSize="@dimen/font_14"
+                 />
+          
+     
+        
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="@dimen/view1"
+        android:background="@color/qianhui_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Top"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="租金       "
+                android:textColor="@color/huise"
+                android:textSize="@dimen/font_14" />
+
+           
+
+                <TextView
+                    android:id="@+id/tv_mefabu_zujin"
+                    android:layout_width="0dp"
+                android:layout_height="@dimen/Top"
+                android:layout_weight="0.9"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textColor="@color/huise"
+                android:textSize="@dimen/font_12"/>
+        
+        
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="@dimen/view1"
+        android:background="@color/qianhui_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Top"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="服务地址"
+                android:textColor="@color/huise"
+                android:textSize="@dimen/font_14" />
+
+        
+
+                <TextView
+                    android:id="@+id/tv_mefabu_daizhi"
+                   android:layout_width="0dp"
+                android:layout_height="@dimen/Top"
+                android:layout_weight="0.9"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/huise"
+                android:textSize="@dimen/font_12"  />
+        
+        
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="@dimen/view1"
+        android:background="@color/qianhui_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true" >
+
+                <TextView
+                    android:id="@+id/tv_mefabu_shijian"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:layout_height="@dimen/Top"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/font_12"
+                    android:textColor="@color/font_lanse" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/Top"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/font_12"
+                    android:textColor="@color/font_lanse" />
+            </LinearLayout>
+        </RelativeLayout>
+        
+    </LinearLayout>
+    <!-- <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/textheight20"
+        android:gravity="center_vertical"
+        android:text="@string/assess"
+        android:layout_marginLeft="20dp"/>
+    <ListView 
+        android:id="@+id/lv_me02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        >
+        
+        
+        
+    </ListView>
+ -->
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popxml"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/title"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/title2"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/gv_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="3" 
+        >
+    </GridView>
+
+    <Button
+        android:id="@+id/bt_popqueding"
+        style="@style/button03"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:textSize="@dimen/font_12"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="确认" />
+
+</LinearLayout>

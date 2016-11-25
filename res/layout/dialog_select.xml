@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+   
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:orientation="vertical"
+        >
+    <Button
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:textColor="#3F81DF"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <ListView 
+        android:id="@+id/dialoglistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/qianhui"
+        android:scrollbars="none"
+        android:dividerHeight="1px"
+        ></ListView>
+
+	</LinearLayout>
+</LinearLayout>

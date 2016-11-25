@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:tools="http://schemas.android.com/tools" tools:ignore="HardcodedText">
+
+     <include
+        layout="@layout/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+     <include
+        layout="@layout/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银行卡"
+                android:textColor="#fb892b"
+                android:textSize="@dimen/font_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="建设银行储蓄卡"
+                android:textColor="#6b60f6"
+                android:textSize="@dimen/font_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                android:src="@drawable/xiala" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="#cccccc"
+            android:orientation="horizontal"
+            android:padding="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="余额"
+                android:textColor="#6b60f6" 
+                android:textSize="@dimen/font_14"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="#cccccc"
+                android:hint="请输入余额"
+                android:maxLines="1" 
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/font_14"/>
+        </LinearLayout>
+
+        <Button
+            style="@style/button02"
+            android:layout_marginTop="40dp"
+            android:layout_weight="0.10"
+            android:text="下一步"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+
+</LinearLayout>
+

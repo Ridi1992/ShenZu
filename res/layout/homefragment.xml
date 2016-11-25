@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/bg_hui">
+    
+   <!--  <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wodefabu"/> -->
+        <include 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            
+            layout="@layout/view_pager"
+            />
+         
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="7"
+        >
+            <ImageView
+                android:id="@+id/iv_h_f01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/mianfeiqu1"
+                 android:background="@color/mianfei_color" 
+                  android:gravity="center"
+                   android:layout_weight="1"/>
+
+            <ImageView
+                 android:id="@+id/iv_h_f02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/nvshenqu1" 
+                android:layout_weight="1"
+                 android:background="@color/nv_color"/>
+
+            <ImageView
+                 android:id="@+id/iv_h_f03"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/nanshenqu1" 
+                android:layout_weight="1"
+                android:background="@color/nan_color"/>
+
+
+            <ImageView
+                 android:id="@+id/iv_h_f04"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/tuhaoqu1"
+                android:layout_weight="1"
+                android:background="@color/tuhao_color" />
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

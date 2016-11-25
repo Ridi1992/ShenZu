@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"  
+xmlns:android="http://schemas.android.com/apk/res/android">  
+  <item android:duration="1000" android:drawable="@drawable/logo_douban" />  
+  <item android:duration="1000" android:drawable="@drawable/logo_kaixin" />  
+  <item android:duration="1000" android:drawable="@drawable/logo_qq" />  
+  <item android:duration="1000" android:drawable="@drawable/logo_qzone" />  
+  <item android:duration="1000" android:drawable="@drawable/logo_renren" />  
+  <item android:duration="1000" android:drawable="@drawable/logo_sinaweibo" />
+  <item android:duration="1000" android:drawable="@drawable/logo_wechat" />  
+  
+</animation-list>   

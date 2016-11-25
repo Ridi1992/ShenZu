@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/qianhui"
+    
+ android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+     <include 
+        layout="@layout/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+     <include 
+        layout="@layout/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+     
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" 
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:gravity="center_vertical"
+            android:background="@color/baise"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/Top"
+                android:gravity="center_vertical"
+                android:text="@string/make_phone"
+                android:layout_weight="1"
+                android:textSize="@dimen/font_14"
+                android:textColor="@color/shenhui"
+               />
+              <EditText
+                android:id="@+id/et_dingdan_phone"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:singleLine="true"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:hint="请输入真实联系电话"
+                android:background="@color/baise"
+                android:inputType="phone"
+                android:textSize="@dimen/font_12"
+                android:lines="1"
+                android:textColor="@color/shenhui"
+                />
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+         <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Top"
+                android:gravity="center_vertical"
+                android:text="预约说明"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="@dimen/font_14"
+               />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="10dp"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+                  android:background="@color/baise"
+                  android:gravity="top"
+                  android:hint="\t\t本平台的流程为预约以后需要填写本人联系方式，方可被预约人看到，被约人在同意预约以后，请您进行支付被约人工资，工资款项仅在双方确认完毕以后，才会进入被约人账户内。如被约人违约，可反馈平台客服进行退款,本项目最终解释权归偶见APP所有。
+"
+                  android:inputType="textMultiLine"
+                  android:lineSpacingExtra="5dp"
+                  android:singleLine="false"
+                  android:textSize="@dimen/font_14" />
+
+              <Button
+                  android:id="@+id/bt_querenyuyue"
+                  style="@style/button03"
+                  android:layout_width="match_parent"
+                  android:layout_height="45dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginTop="30dp"
+                  android:text="确认预约"
+                  android:textSize="@dimen/font_16" />
+
+              </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <com.sanmi.view.CircularImage
+                    android:id="@+id/detail_face"
+                    android:layout_width="@dimen/touxiang80"
+                    android:layout_height="@dimen/touxiang80"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_b_b_name"
+                        style="@style/font14"
+                        android:text="name" />
+
+                    <ImageView
+                        android:id="@+id/iv_b_b_sex"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/nv" />
+                    <ImageView
+                        android:id="@+id/iv_b_b_huiyuan"
+                        android:layout_width="15dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_height="15dp"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/font12"
+                        android:text="年龄：" />
+
+                    <TextView
+                        android:id="@+id/tv_b_b_age"
+                        style="@style/font12"
+                        android:text="25" />
+                    <!--
+                    <TextView
+                        style="@style/font12"
+                        android:layout_marginLeft="10dp"
+                        android:text="人气：" />
+
+                    <TextView
+                        android:id="@+id/tv_b_b_renqi"
+                        style="@style/font12"
+                        android:text="20" />
+                    -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_b_b_address"
+                        style="@style/font12"
+                        android:singleLine="true"
+                        android:layout_width="wrap_content"
+                        android:text="address" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <org.yanzi.ui.HorizontalListView
+                        android:id="@+id/hs_tu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="110dp"
+                        android:background="#AAEEEDF3" >
+                    </org.yanzi.ui.HorizontalListView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="技能展示" />
+
+                <TextView
+                    android:id="@+id/tv_b_b_skill"
+                    style="@style/font12"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:textColor="@color/font_hui" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="个性签名"
+                    android:textColor="@color/font_lanse" />
+
+                <TextView
+                    android:id="@+id/tv_b_b_sign"
+                    style="@style/font12"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:textColor="@color/font_hui" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="服务范围" />
+
+                <!--
+                <org.yanzi.ui.HorizontalListView
+                    android:id="@+id/hs_pb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </org.yanzi.ui.HorizontalListView>
+                -->
+
+                <TextView
+                    android:id="@+id/hs_pb"
+                    style="@style/font12"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:singleLine="false"
+                    android:textColor="@color/font_hui" />
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="定价       "
+                    android:textColor="@color/font_lanse" />
+
+                <TextView
+                    android:id="@+id/tv_b_b_rent"
+                    style="@style/font12"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/iv_left"
+                    android:paddingBottom="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:textColor="@color/font_lanse" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="职业       "
+                    android:textColor="@color/font_lanse" />
+
+                <TextView
+                    android:id="@+id/tv_b_b_work"
+                    style="@style/font12"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/iv_left"
+                    android:paddingBottom="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:textColor="@color/font_lanse" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="身高       "
+                    android:textColor="@color/font_lanse" />
+
+                <TextView
+                    android:id="@+id/tv_b_b_height"
+                    style="@style/font12"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/iv_left"
+                    android:paddingBottom="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:textColor="@color/font_lanse" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="档期日期"
+                    android:textColor="@color/font_lanse" />
+
+                <TextView
+                    android:id="@+id/tv_b_b_time"
+                    style="@style/font12"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/iv_left"
+                    android:paddingBottom="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:textColor="@color/font_lanse" />
+            </RelativeLayout>
+            <RelativeLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="档期时间"
+                    android:textColor="@color/font_lanse" />
+
+                <TextView
+                    android:id="@+id/tv_b_b_time2"
+                    style="@style/font12"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/iv_left"
+                    android:paddingBottom="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:textColor="@color/font_lanse" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="发布时间"
+                    android:textColor="@color/font_lanse" />
+
+                <TextView
+                    android:id="@+id/tv_b_b_add"
+                    style="@style/font12"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/iv_left"
+                    android:paddingBottom="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:textColor="@color/font_lanse" />
+            </RelativeLayout>
+    
+
+</LinearLayout>

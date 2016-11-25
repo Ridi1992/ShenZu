@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sanmi.activity"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 百度地图权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 百度地图权限 -->
+    <!-- 极光权限 -->
+    <permission
+        android:name="com.sanmi.activity.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+	Required  一些系统要求的权限，如访问网络等
+    <uses-permission android:name="com.sanmi.activity.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>  
+
+    
+    
+<!--     Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+   
+    <!-- 极光权限 -->
+
+    <application
+        android:name="com.sanmi.view.MyApplication"
+        android:allowBackup="true"
+        android:configChanges="fontScale"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+
+        <!-- jpush 推送 -->
+        
+<!--         Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.sanmi.activity" />
+            </intent-filter>
+        </activity>
+<!--         Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+    
+        
+<!--         Required SDK 核心功能 -->
+<!--         可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+<!--         since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+<!--         若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.sanmi.activity" />
+            </intent-filter>
+
+        </service>
+        
+<!--         Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+             <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   Required  显示通知栏
+                <category android:name="com.sanmi.activity" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+<!--              Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+   
+        </receiver>
+        
+<!--         Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/>
+        
+<!--         User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.example.jpushdemo.MyReceiver"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> Required  用户注册SDK的intent
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />  
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> Required  用户接收SDK消息的intent
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> Required  用户接收SDK通知栏信息的intent
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> Required  用户打开自定义通知栏的intent
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> Optional 用户接受Rich Push Javascript 回调函数的intent
+                <action android:name="cn.jpush.android.intent.CONNECTION" />接收网络变化 连接/断开 since 1.6.3
+                <category android:name="com.sanmi.activity" />
+            </intent-filter>
+        </receiver>
+ 
+        
+<!--         Required  . Enable it you can get statistics data with channel -->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="fbb253a43da4a29383db92f1" />  值来自开发者平台取得的AppKey
+       
+
+
+<!--         jpush推送 -->
+        <activity
+            android:name="com.sanmi.activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sanmi.activity.MainActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.RegisterActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MianFeiActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.GirlActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.BoyActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MoneyActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MsgPMaachuzu" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MsgPMxunqiu" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MsgGchuzu" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MsgGxunqiu" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MsgBchuzu" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MsgBxunqiu" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MsgMchuzu" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MsgMxunqiu" >
+        </activity>
+        <activity android:name="com.sanmi.activity.XiaDanActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MeYueActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MeFaBuActivity" >
+        </activity>
+        <activity
+            android:name="com.sanmi.activity.WanShanActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MeNunberActivity" >
+        </activity>
+        <activity
+            android:name="com.sanmi.activity.RenZhengActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.sanmi.activity.SheZhiActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.ChongZhiActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.TiXianActivity" >
+        </activity>
+        <activity
+            android:name="com.sanmi.activity.FaBuActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MeDingDanActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.XiuGaiMiMaActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.LoginActivity" >
+        </activity>
+        <activity
+            android:name="com.sanmi.activity.ViewPagerActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity android:name="com.sanmi.activity.SelectPictureActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.XiangCeActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.ImageViewActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.XieYiActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.PagerActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.WhoMeYueActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MeWantActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.MeCallActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.ZhiFuActivity" >
+        </activity>
+        <activity
+            android:name="com.sanmi.activity.CommentActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.sanmi.activity.SelectPictureActivityRenzheng" >
+        </activity>
+        <activity android:name="com.sanmi.activity.PayRankActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.ZhanghuCZActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.ZhanghuJYActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.ZhanghuTXActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.FeedBackActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.AboutUsActivity" >
+        </activity>
+        <activity android:name="com.sanmi.activity.NoAcceptActivity" >
+        </activity>
+        <activity
+            android:name="com.sanmi.activity.SetSexActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.sanmi.activity.AcceptActivity" >
+        </activity>
+        <!-- 支付宝 -->
+        <activity android:name="com.alipay.sdk.pay.demo.PayDemoActivity" >
+        </activity>
+        <!-- 支付宝 -->
+        <activity android:name="com.sanmi.activity.MySelfActivity" >
+        </activity>
+
+        <!-- 百度地图 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="cYXX7EcoRigfptCDcOAqTp3V" />
+        <!-- 百度地图 -->
+    </application>
+
+</manifest>

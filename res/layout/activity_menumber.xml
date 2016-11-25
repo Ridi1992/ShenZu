@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title2"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/Top"
+            android:gravity="center_vertical"
+            android:text="@string/sum_show"
+            android:textColor="@color/shenhui"
+            android:textSize="@dimen/font_14"/>
+
+        <TextView
+            android:id="@+id/user_amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/baise"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/qianhui_color" />
+
+    <LinearLayout
+        android:id="@+id/zhanghu_jiaoyi"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/Top"
+            android:gravity="center_vertical"
+            android:text="@string/jiaoyijilu"
+            android:textColor="@color/shenhui"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:layout_width="0dp"
+           android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/baise"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/qianhui_color" />
+
+    <LinearLayout
+        android:id="@+id/zhanghu_chongzhi"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/Top"
+            android:gravity="center_vertical"
+            android:text="充值明细"
+            android:textColor="@color/shenhui"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/baise"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/qianhui_color" />
+
+    <LinearLayout
+        android:id="@+id/zhanghu_tixian"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/Top"
+            android:gravity="center_vertical"
+            android:text="提现明细"
+            android:textColor="@color/shenhui"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/baise"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/qianhui_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_chongzhi"
+            style="@style/button03"
+            android:text="@string/add_money"
+            android:textColor="@color/baise" />
+
+        <Button
+            android:id="@+id/bt_tixian"
+            style="@style/button03"
+            android:layout_marginLeft="50dp"
+            android:text="@string/delect_money"
+            android:textColor="@color/baise" />
+    </LinearLayout>
+
+</LinearLayout>

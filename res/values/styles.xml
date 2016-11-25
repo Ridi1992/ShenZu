@@ -1,0 +1,219 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="view_h">
+        <item name="android:background">@color/view_dededd</item>
+       <item name="android:layout_width">match_parent</item>
+       <item name="android:layout_height">2px</item> 
+    </style>
+    <style name="font28">
+       <item name="android:textSize">14sp</item>
+       <item name="android:textColor">#434343</item>
+       <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+       <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="qubiaoti" parent="android:Theme.Light.NoTitleBar"></style>
+
+    <style name="radiobutton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+
+
+        <item name="android:textColor">@color/font_color</item>
+    </style>
+
+    <style name="radiobutton2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/select_color</item>
+    </style>
+
+    <style name="View">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/qianhui</item>
+    </style>
+
+    <style name="View02">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/qianhui</item>
+    </style>
+
+    <style name="fragment_iv">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/radiobutton_xml01</item>
+        <item name="android:checked">true</item>
+    </style>
+
+    <style name="font14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/Top</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/font_lanse</item>
+        <item name="android:textSize">@dimen/font_14</item>
+    </style>
+
+    <style name="font12">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/Top</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/font_lanse</item>
+        <item name="android:textSize">@dimen/font_min</item>
+    </style>
+
+    <style name="huiyuanbuju">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/bg_hui</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="bilie">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="button02">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/comer_bg</item>
+        <item name="android:textColor">@color/baise</item>
+    </style>
+
+    <style name="button03">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/comer_bg</item>
+        <item name="android:textColor">@color/baise</item>
+    </style>
+
+    <style name="my">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/Top</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/font_min</item>
+        <item name="android:textColor">@color/huise</item>
+    </style>
+
+    <style name="sp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LodingDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+ <!-- 设置自定义布局的背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+ <!-- 设置window背景透明，也就是去边框 -->
+        <item name="android:windowFrame">@null</item>
+ <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+ <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+ <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+ <!-- 无标题 -->
+        <item name="android:backgroundDimEnabled">false</item>
+ <!-- 模糊 -->
+    </style>
+    <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+	<style name="main_bar_text_style">
+        <item name="android:textColor">#5A5A5A</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+     <style name="mytextstyle14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/shenhui</item>
+        <item name="android:textSize">14sp</item>
+         </style>
+    <style name="myedittextstyle14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/shenhui</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+    <style name="roomRatingBar" 
+        parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/room_rating_bar</item>
+    </style>
+</resources>

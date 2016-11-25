@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".SelectPictureActivity" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title2"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/bilie"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <com.sanmi.view.CircularImage
+                        android:id="@+id/detail_face"
+                        android:layout_width="@dimen/touxiang80"
+                        android:layout_height="@dimen/touxiang80"
+                        android:src="@drawable/banjidayouxiang" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_pm_b_name"
+                            style="@style/font14"
+                            android:text="执着的豆芽" />
+
+                        <ImageView
+                            android:id="@+id/iv_pm_b_sex"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/nv" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/font12"
+                            android:text="年龄：" />
+
+                        <TextView
+                            android:id="@+id/tv_pm_b_age"
+                            style="@style/font12"
+                            android:text="25" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_pm_b_address"
+                            style="@style/font12"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="西安市雁塔区" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="技能展示" />
+
+                <TextView
+                    android:id="@+id/tv_pm_b_skill"
+                    style="@style/font12"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:singleLine="false"
+                    android:text="做饭"
+                    android:textColor="@color/font_hui" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view1"
+                android:background="@color/qianhui_color" />
+
+            <LinearLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="签名       "
+                    android:textColor="@color/font_lanse" />
+
+                <TextView
+                    android:id="@+id/tv_pm_b_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:background="@drawable/et_bgxml"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/font_hui"
+                    android:textSize="@dimen/font_min" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view1"
+                android:background="@color/qianhui_color" />
+
+            <LinearLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="服务范围" />
+
+                <!--
+                <org.yanzi.ui.HorizontalListView
+                    android:id="@+id/hs_pb"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/Top40"
+                     >
+                    
+                    
+                    
+                </org.yanzi.ui.HorizontalListView>
+                -->
+
+                <TextView
+                    android:id="@+id/hs_pb"
+                    style="@style/font12"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:singleLine="false"
+                    android:text="做饭"
+                    android:textColor="@color/font_hui" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view1"
+                android:background="@color/qianhui_color" />
+
+            <RelativeLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="定价       "
+                    android:textColor="@color/font_lanse" />
+
+                <TextView
+                    android:id="@+id/tv_pm_b_rent"
+                    style="@style/font12"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/iv_left"
+                    android:paddingBottom="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text=""
+                    android:textColor="@color/font_lanse" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view1"
+                android:background="@color/qianhui_color" />
+
+            <RelativeLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="职业"
+                    android:textColor="@color/font_lanse" />
+
+                <TextView
+                    android:id="@+id/tv_pm_b_work"
+                    style="@style/font12"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/iv_left"
+                    android:paddingBottom="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text="企业员工"
+                    android:textColor="@color/font_lanse" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view1"
+                android:background="@color/qianhui_color" />
+
+            <RelativeLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="身高"
+                    android:textColor="@color/font_lanse" />
+
+                <TextView
+                    android:id="@+id/tv_pm_b_height"
+                    style="@style/font12"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/iv_left"
+                    android:paddingBottom="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text="171cm"
+                    android:textColor="@color/font_lanse" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view1"
+                android:background="@color/qianhui_color" />
+
+            <RelativeLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="档期       "
+                    android:textColor="@color/font_lanse" />
+
+                <TextView
+                    android:id="@+id/tv_pm_b_time"
+                    style="@style/font12"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/iv_left"
+                    android:paddingBottom="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text="14:00--20:00"
+                    android:textColor="@color/font_lanse" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view1"
+                android:background="@color/qianhui_color" />
+
+            <RelativeLayout
+                style="@style/huiyuanbuju"
+                android:layout_height="@dimen/Top40"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/font14"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/iv_left"
+                    android:text="发布时间"
+                    android:textColor="@color/font_lanse" />
+
+                <TextView
+                    style="@style/font12"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/iv_left"
+                    android:paddingBottom="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text=""
+                    android:textColor="@color/font_lanse" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/line1"
+        android:background="@color/bg_hui"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/tv_b_b_submit22"
+            style="@style/button02"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#6b60f6"
+            android:text="约此服务" />
+    </LinearLayout>
+
+</LinearLayout>

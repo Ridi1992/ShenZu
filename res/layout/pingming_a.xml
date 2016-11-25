@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    
+ android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title" />
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title2"
+        android:visibility="gone" />
+  
+<LinearLayout 
+    style="@style/bilie"
+    android:layout_weight="3"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3F0DD"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.sanmi.view.CircularImage
+            android:layout_width="@dimen/touxiang80"
+            android:layout_height="@dimen/touxiang80"
+            android:src="@drawable/banjidayouxiang" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_pm_a_name"
+                style="@style/font14"
+                android:text="执着的豆芽" />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/nv" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/font12"
+                android:text="年龄：" />
+
+            <TextView
+                style="@style/font12"
+                android:text="25" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#AAAAAA" />
+
+            <TextView
+                style="@style/font12"
+                android:text="人气：" />
+
+            <TextView
+                style="@style/font12"
+                android:text="20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/font12"
+                android:text="西安市雁塔区" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bilie"
+        android:layout_weight="4"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/huiyuanbuju"
+            android:layout_marginTop="0dp" >
+
+            <TextView
+                style="@style/font14"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/iv_left"
+                android:text="技能需求" />
+
+            <TextView
+                style="@style/font12"
+                android:layout_marginLeft="@dimen/iv_left"
+                android:layout_marginTop="@dimen/tv_top"
+                android:text="做饭" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/iv_left"
+                android:layout_marginTop="@dimen/tv_top"
+                android:text="开车"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_min" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/iv_left"
+                android:layout_marginTop="@dimen/tv_top"
+                android:text="医疗"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_min" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/huiyuanbuju" >
+
+            <TextView
+                style="@style/font14"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/iv_left"
+                android:text="寻求信息" />
+
+            <TextView
+                style="@style/font12"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="@dimen/iv_left"
+                android:layout_marginTop="@dimen/tv_top"
+                android:background="@drawable/yuan_bxml"
+                android:text="看电影" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/huiyuanbuju" >
+
+            <TextView
+                style="@style/font14"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/iv_left"
+                android:text="地址" />
+
+            <TextView
+                style="@style/font12"
+                android:layout_marginLeft="@dimen/huiyuan40"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingTop="@dimen/padding5"
+                android:text="西安市南稍门"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/huiyuanbuju"
+            android:layout_marginTop="@dimen/line1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/font14"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/iv_left"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingTop="@dimen/padding5"
+                android:text="租金"
+                android:textColor="@color/font_lanse" />
+
+            <TextView
+                style="@style/font12"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/iv_left"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingTop="@dimen/padding5"
+                android:text="100/小时"
+                android:textColor="@color/font_lanse" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/huiyuanbuju"
+            android:layout_marginTop="@dimen/line1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/font14"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/iv_left"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingTop="@dimen/padding5"
+                android:text="时间"
+                android:textColor="@color/font_lanse" />
+
+            <TextView
+                style="@style/font12"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/iv_left"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingTop="@dimen/padding5"
+                android:text="14:00--20:00"
+                android:textColor="@color/font_lanse" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/huiyuanbuju"
+            android:layout_marginTop="@dimen/line1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/font14"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/iv_left"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingTop="@dimen/padding5"
+                android:textColor="@color/font_lanse" />
+
+            <TextView
+                style="@style/font12"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/iv_left"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingTop="@dimen/padding5"
+                android:textColor="@color/font_lanse"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/huiyuanbuju"
+            android:layout_marginTop="@dimen/line1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/font14"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/iv_left"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingTop="@dimen/padding5"
+                android:text="特殊要求"
+                android:textColor="@color/font_lanse" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/huiyuanbuju"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <!--<LinearLayout
+            style="@style/huiyuanbuju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/huiyuan10"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/huiyuanbuju"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.sanmi.view.CircularImage
+                    android:layout_width="@dimen/huiyuan20"
+                    android:layout_height="@dimen/huiyuan20"
+                    android:layout_marginBottom="@dimen/huiyuan5"
+                    android:layout_marginTop="@dimen/huiyuan5"
+                    android:src="@drawable/banjidayouxiang" />
+            </LinearLayout>
+        </LinearLayout>-->
+
+        <!--  <LinearLayout
+            style="@style/huiyuanbuju"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/font12"
+                android:layout_marginTop="@dimen/huiyuan10"
+                android:text="倔强的小河"
+                android:textColor="@color/font_lanse"
+                android:textSize="@dimen/font_10" />
+
+            <TextView
+                style="@style/font12"
+                android:layout_marginBottom="@dimen/huiyuan3"
+                android:layout_marginTop="@dimen/huiyuan35"
+                android:text="服务状态很好"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_10" />
+        </LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/tv_left"
+        android:layout_marginRight="@dimen/tv_left"
+        android:layout_marginTop="@dimen/line1"
+        android:layout_weight="0.8"
+        android:background="@color/bg_hui"
+        android:gravity="center_horizontal" >
+
+        <Button
+             android:id="@+id/bt_yuezifuwu"
+            style="@style/button"
+            android:layout_gravity="center"
+            android:background="@drawable/button_xml"
+            android:text="约此服务" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bjx="http://schemas.android.com/apk/res/com.sanmi.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title2"
+        android:visibility="gone" />
+
+    <!--
+         <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    -->
+
+    <com.sanmi.refresh.PullToRefreshListView
+        android:id="@+id/lv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        bjx:mode="both" />
+    <!-- </ScrollView> -->
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/line1"
+    android:background="@color/bg_hui"
+    android:gravity="center_horizontal" >
+
+    <Button
+        android:id="@+id/tv_b_b_submit"
+        style="@style/button02"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#6b60f6"
+        android:text="约此服务" />
+
+</LinearLayout>
+
+</LinearLayout>

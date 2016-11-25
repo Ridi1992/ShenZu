@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fragment_iv40">40dp</dimen>
+    <dimen name="font_min">10sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="paddingTop">10dp</dimen>
+    <dimen name="padding4">4dp</dimen>
+    <dimen name="Top40">40dp</dimen>
+    <dimen name="top50">50dp</dimen>
+    <dimen name="left10dp">10dp</dimen>
+    <dimen name="margin10dp">10dp</dimen>
+    
+    <dimen name="view1">1px</dimen>
+    
+    <dimen name="iv_left">15dp</dimen>
+    <dimen name="iv_left5">5dp</dimen>
+    
+    <dimen name="tv_top">15px</dimen>
+    <dimen name="tv_left">5dp</dimen>
+    <dimen name="line3">3px</dimen>
+    <dimen name="line0.5">0.5px</dimen>
+    <dimen name="line1">3px</dimen>
+    <dimen name="padding5">5px</dimen>
+    <dimen name="picture30">50dp</dimen>
+    <dimen name="huiyuan40">40dp</dimen>
+    <dimen name="huiyuan20">20dp</dimen>
+    <dimen name="huiyuan30">30dp</dimen>
+    
+    <dimen name="huiyuan35">35dp</dimen>
+    <dimen name="huiyuan5">5dp</dimen>
+    <dimen name="huiyuan10">10dp</dimen>
+    <dimen name="huiyuan3">3dp</dimen>
+    <dimen name="huiyuan15">15dp</dimen>
+    <dimen name="huiyuan12">12dp</dimen>
+    <dimen name="touxiang50">50dp</dimen>
+    <dimen name="touxiang65">65dp</dimen>
+    
+    <dimen name="ziti14">14sp</dimen>
+    <dimen name="ziti12">12sp</dimen>
+    <dimen name="ziti10">10sp</dimen>
+    <dimen name="thumnail_default_width">100dip</dimen>
+    <dimen name="thumnail_default_height">100dip</dimen>
+    <dimen name="Top">25dp</dimen>
+    <dimen name="textheight20">20dp</dimen>
+    <dimen name="touxiang80">70dp</dimen>
+    
+	<dimen name="me_imgsize">25dp</dimen>
+    
+
+</resources>
